@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card-style">
+
+        <head>
+            <h1>Calculaton</h1>
+
+        </head>
+        <main class="main-body">
+            <section class="input-section">
+                <input id="output-screen" type="text">
+            </section>
+            <!-- end input section -->
+
+            <section>
+                <div class="main-button">
+
+                    <div>
+                        <input id="clear" type="button" class="btn" value="C">
+                        <input onclick="display('+/-')" id="plus-minus" type="button" class="btn" value="+/-">
+                        <input onclick="display('%')" id="modulas" type="button" class="btn" value="%">
+                        <input onclick="display('/')" id="dividing" type="button" class="btn btn-style" value="/">
+                    </div>
+                    <div>
+                        <input onclick="display('7')" type="button" class="btn" value="7">
+                        <input onclick="display('8')" type="button" class="btn" value="8">
+                        <input onclick="display('9')" type="button" class="btn" value="9">
+                        <input onclick="display('*')" type="button" class="btn btn-style" value="x">
+                    </div>
+                    <div>
+                        <input onclick="display('4')" type="button" class="btn" value="4">
+                        <input onclick="display('5')" type="button" class="btn" value="5">
+                        <input onclick="display('6')" type="button" class="btn" value="6">
+                        <input onclick="display('-')" type="button" class="btn btn-style" value="-">
+                    </div>
+                    <div>
+                        <input onclick="display('1')" type="button" class="btn" value="1">
+                        <input onclick="display('2')" type="button" class="btn" value="2">
+                        <input onclick="display('3')" type="button" class="btn" value="3">
+                        <input onclick="display('+')" id="plus" type="button" class="btn btn-style" value="+">
+                    </div>
+                    <div>
+                        <input onclick="display('0')" type="button" class="btn" value="0">
+                        <input onclick="display('.')" type="button" class="btn" value=".">
+                        <input onclick="del()" type="button" class="btn" value="DEL">
+                        <input onclick="Calculate()" id="equal" type="button" style="background-color: orange;" class="btn" value="=">
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>
